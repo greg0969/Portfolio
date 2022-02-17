@@ -1,3 +1,20 @@
+body {
+    font-family: cursive;
+}
+
+.logo {
+    align-content: center;
+    text-decoration: none;
+    text-align-last: center;
+    color: black;
+}
+
+
+.presentation {
+    text-align: center;
+    margin: 3em 0;
+}
+
 .resumedProject {
     display: flex;
     flex-wrap: wrap;
