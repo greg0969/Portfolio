@@ -9,7 +9,7 @@ class Projects {
     displayProjects() {
       //html index
       return `
-      <figure class="Project">
+      <figure class="project">
       <a href="photographe.html?id=${this.id}">
       <img src="public/images/${this.id}/logo/${this.name}.png" alt="logo ${this.name}" class="project-img">
         <h2></h2>
@@ -17,17 +17,17 @@ class Projects {
       <figcaption class="project-content">
         <p class="project-description">${this.description}</p>
         <div class="preview">
-        <img src="public/images/${this.id}/preview/previewVersionPC.png" alt="logo ${this.name}" class="project-img"> 
+        <img src="public/images/${this.id}/preview/previewVersionPC.png" alt="logo ${this.name}" class="preview-img"> 
         <img 
         </div>
-        <ul class="project-tag tag-style">
+      </figcaption>
+      <ul class="project-tag tag-style">
             ${this.tags
                 .map(
-                (tag) => `<li><span class="tags tag-style" tag="${tag}">${tag}</span></li>`
+                (tag) => `<li class="tags tag-style" tag="${tag}">${tag}</li>`
                 )
-                .join("")}</li>
+                .join(" / ")}</li>
         </ul>
-      </figcaption>
       </figure>
           
           `;

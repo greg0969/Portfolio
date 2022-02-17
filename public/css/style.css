@@ -21,14 +21,34 @@ body {
     justify-content: space-evenly;
 }
 
+.project {
+    width: 27%;
+}
+
 li {
     list-style-type: none;
+    display: contents;
 }
 
 .project-img {
     width: 40%;
+    height: 3em;
+    object-fit: scale-down;
 }
 
-.Project {
-    width: 30%;
+.preview-img {
+    width: 80%;
+    height: 15em;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 250px) and (max-width: 540px) {
+
+    .presentation, .project-description {
+        font-size: 12px;
+    }
+    img {
+        width: 50%;
+    }
+
 }
