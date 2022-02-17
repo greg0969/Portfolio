@@ -1,0 +1,17 @@
+.resumedProject {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+li {
+    list-style-type: none;
+}
+
+.project-img {
+    width: 40%;
+}
+
+.Project {
+    width: 30%;
+}
